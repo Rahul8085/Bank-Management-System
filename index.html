@@ -1,0 +1,254 @@
+<html>
+<head>
+  <title>Bank Management System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: gray;
+ 
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.hero-slides {
+  position: relative;
+  z-index: 1; }
+
+.single-hero-slide {
+  width: 100%;
+  height: 950px;
+  position: relative;
+  z-index: 1;
+  padding: 0 30px;
+  overflow: hidden; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-hero-slide {
+      height: 700px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-slide {
+      height: 650px; } }
+  @media only screen and (max-width: 767px) {
+    .single-hero-slide {
+      height: 600px; } }
+  .single-hero-slide::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: ''; }
+  .single-hero-slide .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .single-hero-slide .big-text {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 600px;
+    z-index: -10;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-hero-slide .big-text {
+        font-size: 350px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-hero-slide .big-text {
+        font-size: 300px; } }
+    @media only screen and (max-width: 767px) {
+      .single-hero-slide .big-text {
+        font-size: 120px; } }
+  .single-hero-slide .hero-slides-content {
+    display: inline-block; }
+    .single-hero-slide .hero-slides-content h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 62px;
+      color: #ffffff;
+      margin-bottom: 0;
+      font-weight: 60;
+      text-shadow: 18px 0 0 rgba(255, 45, 109, 0.2);
+      display: inline-block; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 60px; } }
+      .single-hero-slide .hero-slides-content h2 span {
+        position: absolute;
+        top: 0;
+        left: -18px;
+        font-size: 32px;
+        color: rgba(132, 57, 255, 0.2);
+        margin-bottom: 0;
+        font-weight: 600;
+        text-shadow: none;
+        z-index: -5; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .single-hero-slide .hero-slides-content h2 span {
+            font-size: 30px; } }
+        @media only screen and (max-width: 767px) {
+          .single-hero-slide .hero-slides-content h2 span {
+            font-size: 30px; } }
+    .single-hero-slide .hero-slides-content p {
+      text-align: right;
+      font-size: 30px;
+      margin-top: -70px;
+      color: #ffffff;
+      font-family: "Allura", cursive; }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content p {
+          font-size: 60px;
+          margin-top: -20px; } }
+
+.hero-slides .owl-item.active .single-hero-slide .slide-img {
+  -webkit-animation: slide 15s linear infinite;
+  animation: slide 15s linear infinite; }
+</style>
+</head>
+<body>
+<nav class="breadcrumb">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">BMS</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+	  <li><a href="viewcust.php">View Customers</a></li>
+      <li><a href="transfer.php">Transfer Money</a></li>
+      <li><a href="transaction.php">Transaction History</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero-slides-content text-center">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  <font color="white" size="60"> Bank Management System <br></font>
+
+
+                  <font color="white" size="30">Spark Foundation</font>
+</div>
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="viewcust.php"><input type="image" src= "img/3.jpg"></a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="transfer.php"><input type="image" src= "img/4.jpg"></a> 
+</body>
+</html>
